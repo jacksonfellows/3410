@@ -45,8 +45,8 @@
 
 (defun random-in-range (type)
   (ecase (first type)
-    (unsigned-byte (random (1- (ash 1 (second type)))))
-    (signed-byte (- (random (1- (ash 1 (second type))))
+    (unsigned-byte (random (ash 1 (second type))))
+    (signed-byte (- (random (ash 1 (second type)))
                     (ash 1 (1- (second type)))))))
 
 (defun generate-tests (name n)
@@ -66,7 +66,7 @@
     (dotimes (_ n)
       (let ((vals (loop for (name type) in ins
                         collecting (random-in-range type))))
-        (format t "~{~d~^ ~}~%" (append vals (multiple-value-list (apply name vals)))))))))
+        (format t "~{~d~^ ~}~%" (append vals (multiple-value-list (apply name vals))))))))
 
 (defun generate-test-file (name n filename)
   (with-open-file (stream filename :direction :output)
@@ -91,3 +91,16 @@
                      x))
                1))
       (t (values sum 0)))))
+
+(defun rev-bits (n n-bits)
+  (dotimes (i (/ n-bits 2) n)
+    (rotatef (ldb (byte 1 i) n) (ldb (byte 1 (- (1- n-bits) i)) n))))
+
+(defop left-right-shift-32-bit (("B" 32) ("Sa" 5) ("left" 1) ("arith" 1)) (("C" 32))
+  (if (= 1 left)
+      (left-shift-32-bit b sa 0)
+      (rev-bits
+       (if (= 1 arith)
+           (left-shift-32-bit (rev-bits b 32) sa (ash b -31))
+           (left-shift-32-bit (rev-bits b 32) sa 0))
+       32)))
