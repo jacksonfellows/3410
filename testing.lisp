@@ -104,3 +104,15 @@
            (left-shift-32-bit (rev-bits b 32) sa (ash b -31))
            (left-shift-32-bit (rev-bits b 32) sa 0))
        32)))
+
+(defop neg-32-bit (("B" 32 :signed)) (("C" 32 :signed) ("V" 1))
+  (let ((res (- b)))
+    (if (typep res '(signed-byte 32))
+        (values res 0)
+        (values (- res 1) 1))))
+
+(defop add-sub-32-bit (("A" 32 :signed) ("B" 32 :signed) ("sub" 1)) (("C" 32) ("V" 1))
+  (if (= sub 1)
+      (multiple-value-bind (-b v) (neg-32-bit b)
+        (signed-add-32-bit a -b v))
+      (signed-add-32-bit a b 0)))
