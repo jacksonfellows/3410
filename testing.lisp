@@ -116,3 +116,20 @@
       (multiple-value-bind (-b v) (neg-32-bit b)
         (signed-add-32-bit a -b v))
       (signed-add-32-bit a b 0)))
+
+(defop cmp-32-bit (("A" 32 :signed) ("B" 32 :signed) ("eq_gt" 1) ("le_gt" 1)) (("C" 32))
+  (if (if (= 1 eq_gt)
+          (if (= 1 le_gt)
+              ;; gt
+              (> a 0)
+              ;; eq
+              (= a b)
+              )
+          (if (= 1 le_gt)
+              ;; le
+              (<= a 0)
+              ;; ne
+              (not (= a b))
+              ))
+      1
+      0))
