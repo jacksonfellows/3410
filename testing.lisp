@@ -133,3 +133,19 @@
               ))
       1
       0))
+
+(defop alu-32-bit (("A" 32 :signed) ("B" 32 :signed) ("Op" 4) ("Sa" 5)) (("C" 32 :signed) ("V" 1))
+  (ecase op
+    (#b1001 (values (logand a b) 0))
+    (#b1000 (values (logior a b) 0))
+    ((#b1100 #b1101) (values (left-right-shift-32-bit b sa 1 0) 0))
+    (#b0110 (values (logxor a b) 0))
+    (#b0111 (values (lognor a b) 0))
+    (#b0000 (values (left-right-shift-32-bit b sa 0 0) 0))
+    (#b0001 (values (left-right-shift-32-bit b sa 0 1) 0))
+    (#b0100 (values (if (not (= a b)) 1 0) 0))
+    (#b0101 (values (if (= a b) 1 0) 0))
+    (#b0010 (values (if (<= a 0) 1 0) 0))
+    (#b0011 (values (if (> a 0) 1 0) 0))
+    ((#b1110 #b1111) (add-sub-32-bit a b 1))
+    ((#b1010 #b1011) (add-sub-32-bit a b 0))))
