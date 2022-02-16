@@ -27,7 +27,9 @@
 (defun edge-values (type)
   (ecase (first type)
     (unsigned-byte
-     (delete-duplicates (list 0 1 (1- (ash 1 (second type))))))
+     (if (<= (second type) 4)
+         (loop for n from 0 to (1- (ash 1 (second type))) collecting n)
+         (delete-duplicates (list 0 1 (1- (ash 1 (second type)))))))
     (signed-byte
      (delete-duplicates (list 0 1 -1 (1- (ash 1 (1- (second type)))) (- (ash 1 (1- (second type)))))))))
 
@@ -134,18 +136,30 @@
       1
       0))
 
+(defun to-signed (x)
+  (if (= 1 (ldb (byte 1 31) x))
+      (1- (- (logxor (1- (ash 1 32)) x)))
+      x))
+
+(defun from-signed (x)
+  (if (< x 0)
+      (1+ (logxor (1- (ash 1 32)) (- x)))
+      x))
+
 (defop alu-32-bit (("A" 32 :signed) ("B" 32 :signed) ("Op" 4) ("Sa" 5)) (("C" 32 :signed) ("V" 1))
-  (ecase op
-    (#b1001 (values (logand a b) 0))
-    (#b1000 (values (logior a b) 0))
-    ((#b1100 #b1101) (values (left-right-shift-32-bit b sa 1 0) 0))
-    (#b0110 (values (logxor a b) 0))
-    (#b0111 (values (lognor a b) 0))
-    (#b0000 (values (left-right-shift-32-bit b sa 0 0) 0))
-    (#b0001 (values (left-right-shift-32-bit b sa 0 1) 0))
-    (#b0100 (values (if (not (= a b)) 1 0) 0))
-    (#b0101 (values (if (= a b) 1 0) 0))
-    (#b0010 (values (if (<= a 0) 1 0) 0))
-    (#b0011 (values (if (> a 0) 1 0) 0))
-    ((#b1110 #b1111) (add-sub-32-bit a b 1))
-    ((#b1010 #b1011) (add-sub-32-bit a b 0))))
+  (let ((a_ (from-signed a))
+        (b_ (from-signed b)))
+    (ecase op
+      (#b1001 (values (to-signed (logand a_ b_)) 0))
+      (#b1000 (values (to-signed (logior a_ b_)) 0))
+      ((#b1100 #b1101) (values (to-signed (left-right-shift-32-bit b_ sa 1 0)) 0))
+      (#b0110 (values (to-signed (logxor a_ b_)) 0))
+      (#b0111 (values (lognor a b) 0))
+      (#b0000 (values (to-signed (left-right-shift-32-bit b_ sa 0 0)) 0))
+      (#b0001 (values (to-signed (left-right-shift-32-bit b_ sa 0 1)) 0))
+      (#b0100 (values (if (not (= a b)) 1 0) 0))
+      (#b0101 (values (if (= a b) 1 0) 0))
+      (#b0010 (values (if (<= a 0) 1 0) 0))
+      (#b0011 (values (if (> a 0) 1 0) 0))
+      ((#b1110 #b1111) (add-sub-32-bit a b 1))
+      ((#b1010 #b1011) (add-sub-32-bit a b 0)))))
