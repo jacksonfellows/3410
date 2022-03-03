@@ -97,95 +97,95 @@ addi x2, x2, 0x0
 slt x18, x1, x2
 ## expect[18] = 0
 # Random cases (N=13)
-# testing slt 1880491170, -1174087743 == 0
-lui x1, 0x70160
-addi x1, x1, 0x4a2
-lui x2, 0xba04d
-addi x2, x2, 0x7c1
+# testing slt -741947519, 989134603 == 1
+lui x1, 0xd3c6c
+addi x1, x1, 0x781
+lui x2, 0x3af50
+addi x2, x2, 0xf0b
 slt x19, x1, x2
-## expect[19] = 0
-# testing slt -1823846736, -169556380 == 1
-lui x1, 0x934a5
-addi x1, x1, 0xeb0
-lui x2, 0xf5e4c
-addi x2, x2, 0x664
+## expect[19] = 1
+# testing slt -829694883, -2014798879 == 0
+lui x1, 0xce8be
+addi x1, x1, 0xc5d
+lui x2, 0x87e8a
+addi x2, x2, 0xbe1
 slt x20, x1, x2
-## expect[20] = 1
-# testing slt -1144121932, -358619135 == 1
-lui x1, 0xbbce1
-addi x1, x1, 0x5b4
-lui x2, 0xea9ff
-addi x2, x2, 0x801
+## expect[20] = 0
+# testing slt -1645882393, 864176384 == 1
+lui x1, 0x9de5d
+addi x1, x1, 0x3e7
+lui x2, 0x33825
+addi x2, x2, 0x900
 slt x21, x1, x2
 ## expect[21] = 1
-# testing slt -1081302210, -70865343 == 1
-lui x1, 0xbf8ca
-addi x1, x1, 0x33e
-lui x2, 0xfbc6b
-addi x2, x2, 0xe41
+# testing slt 553953082, 2021785690 == 1
+lui x1, 0x2104a
+addi x1, x1, 0x73a
+lui x2, 0x78820
+addi x2, x2, 0x5a
 slt x22, x1, x2
 ## expect[22] = 1
-# testing slt 181269674, 1935316327 == 1
-lui x1, 0xacdf
-addi x1, x1, 0x4aa
-lui x2, 0x735a9
-addi x2, x2, 0x567
+# testing slt -1054071140, 1494523560 == 1
+lui x1, 0xc12c2
+addi x1, x1, 0x69c
+lui x2, 0x5914a
+addi x2, x2, 0xea8
 slt x23, x1, x2
 ## expect[23] = 1
-# testing slt 1109638053, -194566019 == 0
-lui x1, 0x4223c
-addi x1, x1, 0xba5
-lui x2, 0xf4673
-addi x2, x2, 0x87d
+# testing slt -1826847104, 238362903 == 1
+lui x1, 0x931c8
+addi x1, x1, 0x680
+lui x2, 0xe352
+addi x2, x2, 0x117
 slt x24, x1, x2
-## expect[24] = 0
-# testing slt 1275598414, -1732182386 == 0
-lui x1, 0x4c081
-addi x1, x1, 0x64e
-lui x2, 0x98c10
-addi x2, x2, 0xe8e
+## expect[24] = 1
+# testing slt -611714111, -239600266 == 1
+lui x1, 0xdb8a0
+addi x1, x1, 0xbc1
+lui x2, 0xf1b80
+addi x2, x2, 0xd76
 slt x25, x1, x2
-## expect[25] = 0
-# testing slt -353228443, -1189022529 == 0
-lui x1, 0xeaf23
-addi x1, x1, 0x965
-lui x2, 0xb920f
-addi x2, x2, 0x4bf
+## expect[25] = 1
+# testing slt 1372109365, -1845253674 == 0
+lui x1, 0x51c8c
+addi x1, x1, 0xa35
+lui x2, 0x9203b
+addi x2, x2, 0x9d6
 slt x26, x1, x2
 ## expect[26] = 0
-# testing slt 1065681327, 379483980 == 0
-lui x1, 0x3f850
-addi x1, x1, 0x1af
-lui x2, 0x169e7
-addi x2, x2, 0x74c
+# testing slt -1001367035, 1828359485 == 1
+lui x1, 0xc4506
+addi x1, x1, 0xa05
+lui x2, 0x6cfa9
+addi x2, x2, 0xd3d
 slt x27, x1, x2
-## expect[27] = 0
-# testing slt -1186081720, 1650860551 == 1
-lui x1, 0xb94dd
-addi x1, x1, 0x448
-lui x2, 0x62662
-addi x2, x2, 0x207
+## expect[27] = 1
+# testing slt 504856874, -332691249 == 0
+lui x1, 0x1e178
+addi x1, x1, 0x12a
+lui x2, 0xec2b9
+addi x2, x2, 0x8cf
 slt x28, x1, x2
-## expect[28] = 1
-# testing slt -2008234458, 641081969 == 1
-lui x1, 0x884cc
-addi x1, x1, 0x626
-lui x2, 0x26362
-addi x2, x2, 0x271
+## expect[28] = 0
+# testing slt 1514737428, -1580195569 == 0
+lui x1, 0x5a491
+addi x1, x1, 0xf14
+lui x2, 0xa1d02
+addi x2, x2, 0x10f
 slt x29, x1, x2
-## expect[29] = 1
-# testing slt -104830345, 1824932774 == 1
-lui x1, 0xf9c07
-addi x1, x1, 0xa77
-lui x2, 0x6cc64
-addi x2, x2, 0x3a6
+## expect[29] = 0
+# testing slt 1880251007, 887217764 == 0
+lui x1, 0x70126
+addi x1, x1, 0xa7f
+lui x2, 0x34e1e
+addi x2, x2, 0xe64
 slt x30, x1, x2
-## expect[30] = 1
-# testing slt 428084347, -1107716597 == 0
-lui x1, 0x19841
-addi x1, x1, 0xc7b
-lui x2, 0xbdf99
-addi x2, x2, 0x60b
+## expect[30] = 0
+# testing slt 1885557006, -1519047938 == 0
+lui x1, 0x70635
+addi x1, x1, 0x10e
+lui x2, 0xa5753
+addi x2, x2, 0xafe
 slt x31, x1, x2
 ## expect[31] = 0
 addi x1, x0, 0

@@ -73,75 +73,75 @@ addi x1, x1, 0x0
 ori x17, x1, -2048
 ## expect[17] = -2048
 # Random cases (N=14)
-# testing ori -1469900971, -1833 == -41
-lui x1, 0xa8631
-addi x1, x1, 0x755
-ori x18, x1, -1833
-## expect[18] = -41
-# testing ori -202585222, -692 == -130
-lui x1, 0xf3ecd
-addi x1, x1, 0xb7a
-ori x19, x1, -692
-## expect[19] = -130
-# testing ori -186042860, -1005 == -489
-lui x1, 0xf4e93
-addi x1, x1, 0x614
-ori x20, x1, -1005
-## expect[20] = -489
-# testing ori 1713929274, -1868 == -834
-lui x1, 0x66288
-addi x1, x1, 0xc3a
-ori x21, x1, -1868
-## expect[21] = -834
-# testing ori -205033944, 435 == -205033541
-lui x1, 0xf3c77
-addi x1, x1, 0xe28
-ori x22, x1, 435
-## expect[22] = -205033541
-# testing ori -16745356, 1532 == -16744964
-lui x1, 0xff008
-addi x1, x1, 0xc74
-ori x23, x1, 1532
-## expect[23] = -16744964
-# testing ori 1541875750, 1944 == 1541877694
-lui x1, 0x5be73
-addi x1, x1, 0x826
-ori x24, x1, 1944
-## expect[24] = 1541877694
-# testing ori -1588615927, -1224 == -199
-lui x1, 0xa14fa
-addi x1, x1, 0x509
-ori x25, x1, -1224
-## expect[25] = -199
-# testing ori 2046582594, -1647 == -45
-lui x1, 0x79fc6
-addi x1, x1, 0xf42
-ori x26, x1, -1647
-## expect[26] = -45
-# testing ori -1748697796, -1555 == -515
-lui x1, 0x97c50
-addi x1, x1, 0xd3c
-ori x27, x1, -1555
-## expect[27] = -515
-# testing ori 748046788, 1775 == 748048367
-lui x1, 0x2c965
-addi x1, x1, 0x9c4
-ori x28, x1, 1775
-## expect[28] = 748048367
-# testing ori -1222420859, 747 == -1222420753
-lui x1, 0xb7235
-addi x1, x1, 0x685
-ori x29, x1, 747
-## expect[29] = -1222420753
-# testing ori -2137892872, 1726 == -2137892866
-lui x1, 0x80925
-addi x1, x1, 0x7f8
-ori x30, x1, 1726
-## expect[30] = -2137892866
-# testing ori -1238956752, 1263 == -1238956545
-lui x1, 0xb6270
-addi x1, x1, 0x530
-ori x31, x1, 1263
-## expect[31] = -1238956545
+# testing ori 1369491423, -1494 == -1
+lui x1, 0x51a0c
+addi x1, x1, 0x7df
+ori x18, x1, -1494
+## expect[18] = -1
+# testing ori -1452305807, -881 == -257
+lui x1, 0xa96f9
+addi x1, x1, 0x271
+ori x19, x1, -881
+## expect[19] = -257
+# testing ori 53976861, 746 == 53977087
+lui x1, 0x337a
+addi x1, x1, 0xf1d
+ori x20, x1, 746
+## expect[20] = 53977087
+# testing ori 598895315, 974 == 598895583
+lui x1, 0x23b27
+addi x1, x1, 0xad3
+ori x21, x1, 974
+## expect[21] = 598895583
+# testing ori -1758368166, 1637 == -1758368129
+lui x1, 0x97317
+addi x1, x1, 0xe5a
+ori x22, x1, 1637
+## expect[22] = -1758368129
+# testing ori 1800836499, 360 == 1800836603
+lui x1, 0x6b569
+addi x1, x1, 0x593
+ori x23, x1, 360
+## expect[23] = 1800836603
+# testing ori -159588292, 805 == -159587523
+lui x1, 0xf67ce
+addi x1, x1, 0x3c
+ori x24, x1, 805
+## expect[24] = -159587523
+# testing ori -1614338864, -2030 == -814
+lui x1, 0x9fc72
+addi x1, x1, 0x4d0
+ori x25, x1, -2030
+## expect[25] = -814
+# testing ori 424424890, -1817 == -513
+lui x1, 0x194c3
+addi x1, x1, 0x5ba
+ori x26, x1, -1817
+## expect[26] = -513
+# testing ori 1686230190, -641 == -513
+lui x1, 0x6481d
+addi x1, x1, 0x4ae
+ori x27, x1, -641
+## expect[27] = -513
+# testing ori 926316361, -415 == -151
+lui x1, 0x37367
+addi x1, x1, 0x749
+ori x28, x1, -415
+## expect[28] = -151
+# testing ori -31349991, 1434 == -31348837
+lui x1, 0xfe21a
+addi x1, x1, 0x319
+ori x29, x1, 1434
+## expect[29] = -31348837
+# testing ori 1737063215, -138 == -129
+lui x1, 0x67898
+addi x1, x1, 0xb2f
+ori x30, x1, -138
+## expect[30] = -129
+# testing ori -1485821903, 1612 == -1485820291
+lui x1, 0xa7703
+addi x1, x1, 0x831
+ori x31, x1, 1612
+## expect[31] = -1485820291
 addi x1, x0, 0
 ## cycles = 83
