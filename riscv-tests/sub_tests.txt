@@ -97,97 +97,97 @@ addi x2, x2, 0x0
 sub x18, x1, x2
 ## expect[18] = 0
 # Random cases (N=13)
-# testing sub -923250890, -1668357839 == 745106949
-lui x1, 0xc8f85
-addi x1, x1, 0xf36
-lui x2, 0x9c8ee
-addi x2, x2, 0x131
+# testing sub -196206272, 1062959511 == -1259165783
+lui x1, 0xf44e2
+addi x1, x1, 0x140
+lui x2, 0x3f5b8
+addi x2, x2, 0x997
 sub x19, x1, x2
-## expect[19] = 745106949
-# testing sub -1669787623, -270465817 == -1399321806
-lui x1, 0x9c791
-addi x1, x1, 0x19
-lui x2, 0xefe10
-addi x2, x2, 0x4e7
+## expect[19] = -1259165783
+# testing sub -260191072, -348028511 == 87837439
+lui x1, 0xf07dd
+addi x1, x1, 0xca0
+lui x2, 0xeb418
+addi x2, x2, 0x1a1
 sub x20, x1, x2
-## expect[20] = -1399321806
-# testing sub -1942123463, 285348874 == 2067494959
-lui x1, 0x8c3d9
-addi x1, x1, 0xc39
-lui x2, 0x11021
-addi x2, x2, 0x40a
+## expect[20] = 87837439
+# testing sub 1882780557, 1780962975 == 101817582
+lui x1, 0x7038f
+addi x1, x1, 0x38d
+lui x2, 0x6a275
+addi x2, x2, 0x69f
 sub x21, x1, x2
-## expect[21] = 2067494959
-# testing sub -186381759, -600489546 == 414107787
-lui x1, 0xf4e41
-addi x1, x1, 0xa41
-lui x2, 0xdc354
-addi x2, x2, 0x1b6
+## expect[21] = 101817582
+# testing sub 157150107, -1720203284 == 1877353391
+lui x1, 0x95df
+addi x1, x1, 0xb9b
+lui x2, 0x9977c
+addi x2, x2, 0x7ec
 sub x22, x1, x2
-## expect[22] = 414107787
-# testing sub 674422010, -596268942 == 1270690952
-lui x1, 0x2832e
-addi x1, x1, 0xcfa
-lui x2, 0xdc75b
-addi x2, x2, 0x872
+## expect[22] = 1877353391
+# testing sub -247551896, -1355009001 == 1107457105
+lui x1, 0xf13eb
+addi x1, x1, 0x868
+lui x2, 0xaf3c3
+addi x2, x2, 0x417
 sub x23, x1, x2
-## expect[23] = 1270690952
-# testing sub -649764080, 334539117 == -984303197
-lui x1, 0xd9456
-addi x1, x1, 0x310
-lui x2, 0x13f0b
-addi x2, x2, 0x96d
+## expect[23] = 1107457105
+# testing sub -1022627371, 317097149 == -1339724520
+lui x1, 0xc30bf
+addi x1, x1, 0x1d5
+lui x2, 0x12e68
+addi x2, x2, 0x4bd
 sub x24, x1, x2
-## expect[24] = -984303197
-# testing sub 1924710079, -1565207187 == -805050030
-lui x1, 0x72b8c
-addi x1, x1, 0xebf
-lui x2, 0xa2b4d
-addi x2, x2, 0x56d
+## expect[24] = -1339724520
+# testing sub -1504547838, -1918947489 == 414399651
+lui x1, 0xa6527
+addi x1, x1, 0xc02
+lui x2, 0x8d9f3
+addi x2, x2, 0xf5f
 sub x25, x1, x2
-## expect[25] = -805050030
-# testing sub -945404472, 1908032394 == 1441530430
-lui x1, 0xc7a64
-addi x1, x1, 0x5c8
-lui x2, 0x71ba4
-addi x2, x2, 0x38a
+## expect[25] = 414399651
+# testing sub -1462838359, -504023355 == -958815004
+lui x1, 0xa8cee
+addi x1, x1, 0xba9
+lui x2, 0xe1f53
+addi x2, x2, 0x6c5
 sub x26, x1, x2
-## expect[26] = 1441530430
-# testing sub 1576502308, -1596819963 == -1121645025
-lui x1, 0x5df78
-addi x1, x1, 0x424
-lui x2, 0xa0d27
-addi x2, x2, 0x605
+## expect[26] = -958815004
+# testing sub -1358383156, -1987882572 == 629499416
+lui x1, 0xaf08b
+addi x1, x1, 0x7cc
+lui x2, 0x89835
+addi x2, x2, 0x1b4
 sub x27, x1, x2
-## expect[27] = -1121645025
-# testing sub 891597531, -1964210067 == -1439159698
-lui x1, 0x3524b
-addi x1, x1, 0x2db
-lui x2, 0x8aec9
-addi x2, x2, 0x86d
+## expect[27] = 629499416
+# testing sub -269154469, 835567743 == -1104722212
+lui x1, 0xeff50
+addi x1, x1, 0x75b
+lui x2, 0x31cdc
+addi x2, x2, 0x7f
 sub x28, x1, x2
-## expect[28] = -1439159698
-# testing sub -1559568313, -1269010218 == -290558095
-lui x1, 0xa30ae
-addi x1, x1, 0x47
-lui x2, 0xb45c7
-addi x2, x2, 0xd6
+## expect[28] = -1104722212
+# testing sub -456751352, 2081940545 == 1756275399
+lui x1, 0xe4c68
+addi x1, x1, 0x708
+lui x2, 0x7c17e
+addi x2, x2, 0x441
 sub x29, x1, x2
-## expect[29] = -290558095
-# testing sub 1878300005, -1601979789 == -814687502
-lui x1, 0x6ff49
-addi x1, x1, 0x565
-lui x2, 0xa083c
-addi x2, x2, 0xa73
+## expect[29] = 1756275399
+# testing sub -2032776391, -1172405783 == -860370608
+lui x1, 0x86d65
+addi x1, x1, 0xb39
+lui x2, 0xba1e8
+addi x2, x2, 0x1e9
 sub x30, x1, x2
-## expect[30] = -814687502
-# testing sub -1879176097, 313713077 == 2102078122
-lui x1, 0x8ffe1
-addi x1, x1, 0xc5f
-lui x2, 0x12b2e
-addi x2, x2, 0x1b5
+## expect[30] = -860370608
+# testing sub 629958303, -953683866 == 1583642169
+lui x1, 0x258c6
+addi x1, x1, 0x69f
+lui x2, 0xc727f
+addi x2, x2, 0x66
 sub x31, x1, x2
-## expect[31] = 2102078122
+## expect[31] = 1583642169
 addi x1, x0, 0
 addi x2, x0, 0
 ## cycles = 131

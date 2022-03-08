@@ -97,97 +97,97 @@ addi x2, x2, 0x0
 and x18, x1, x2
 ## expect[18] = -2147483648
 # Random cases (N=13)
-# testing and 2139253448, -83353913 == 2063600320
-lui x1, 0x7f827
-addi x1, x1, 0xac8
-lui x2, 0xfb082
-addi x2, x2, 0xec7
+# testing and -1835267693, -1600532007 == -2137521775
+lui x1, 0x929c1
+addi x1, x1, 0x993
+lui x2, 0xa099d
+addi x2, x2, 0x1d9
 and x19, x1, x2
-## expect[19] = 2063600320
-# testing and 805293109, -939897615 == 133844017
-lui x1, 0x2fffd
-addi x1, x1, 0xc35
-lui x2, 0xc7fa5
-addi x2, x2, 0xcf1
+## expect[19] = -2137521775
+# testing and 2907355, -375593446 == 803866
+lui x1, 0x2c6
+addi x1, x1, 0xcdb
+lui x2, 0xe99ce
+addi x2, x2, 0x61a
 and x20, x1, x2
-## expect[20] = 133844017
-# testing and 1306433021, 851929527 == 12976565
-lui x1, 0x4dde9
-addi x1, x1, 0x5fd
-lui x2, 0x32c77
-addi x2, x2, 0x9b7
+## expect[20] = 803866
+# testing and -1600023138, 397789300 == 10584084
+lui x1, 0xa0a19
+addi x1, x1, 0x59e
+lui x2, 0x17b5d
+addi x2, x2, 0x874
 and x21, x1, x2
-## expect[21] = 12976565
-# testing and -290563190, -1819469461 == -2104747766
-lui x1, 0xeeae6
-addi x1, x1, 0xb8a
-lui x2, 0x938d2
-addi x2, x2, 0x96b
+## expect[21] = 10584084
+# testing and -257411074, 1802877428 == 1612722676
+lui x1, 0xf0a83
+addi x1, x1, 0x7fe
+lui x2, 0x6b75c
+addi x2, x2, 0x9f4
 and x22, x1, x2
-## expect[22] = -2104747766
-# testing and 1289897669, 907146830 == 67126852
-lui x1, 0x4ce24
-addi x1, x1, 0x6c5
-lui x2, 0x3611f
-addi x2, x2, 0x64e
+## expect[22] = 1612722676
+# testing and -2127147006, -86941806 == -2146414590
+lui x1, 0x81365
+addi x1, x1, 0x2
+lui x2, 0xfad16
+addi x2, x2, 0xf92
 and x23, x1, x2
-## expect[23] = 67126852
-# testing and -1338789860, -74211190 == -1340891128
-lui x1, 0xb033b
-addi x1, x1, 0x1c
-lui x2, 0xfb93a
-addi x2, x2, 0x8a
+## expect[23] = -2146414590
+# testing and 2041791865, -274338904 == 1772175656
+lui x1, 0x79b34
+addi x1, x1, 0x579
+lui x2, 0xefa5f
+addi x2, x2, 0xba8
 and x24, x1, x2
-## expect[24] = -1340891128
-# testing and 590640151, -1477628131 == 589571093
-lui x1, 0x23347
-addi x1, x1, 0x417
-lui x2, 0xa7ed3
-addi x2, x2, 0xf1d
+## expect[24] = 1772175656
+# testing and -970771026, 1365514284 == 1075843116
+lui x1, 0xc6233
+addi x1, x1, 0x5ae
+lui x2, 0x51642
+addi x2, x2, 0x82c
 and x25, x1, x2
-## expect[25] = 589571093
-# testing and 674073907, 1123168918 == 2097170
-lui x1, 0x282d9
-addi x1, x1, 0xd33
-lui x2, 0x42f23
-addi x2, x2, 0x296
+## expect[25] = 1075843116
+# testing and 606484879, -971740505 == 67381383
+lui x1, 0x24264
+addi x1, x1, 0x98f
+lui x2, 0xc6147
+addi x2, x2, 0xaa7
 and x26, x1, x2
-## expect[26] = 2097170
-# testing and -870965535, -1293802300 == -2147351360
-lui x1, 0xcc162
-addi x1, x1, 0xee1
-lui x2, 0xb2e22
-addi x2, x2, 0x4c4
+## expect[26] = 67381383
+# testing and -1497713894, 1062831751 == 639140354
+lui x1, 0xa6bab
+addi x1, x1, 0x31a
+lui x2, 0x3f598
+addi x2, x2, 0x687
 and x27, x1, x2
-## expect[27] = -2147351360
-# testing and -996692135, -725733603 == -996790503
-lui x1, 0xc497b
-addi x1, x1, 0xf59
-lui x2, 0xd4be3
-addi x2, x2, 0xf1d
+## expect[27] = 639140354
+# testing and 494512905, 525752435 == 491784193
+lui x1, 0x1d79b
+addi x1, x1, 0xb09
+lui x2, 0x1f566
+addi x2, x2, 0x873
 and x28, x1, x2
-## expect[28] = -996790503
-# testing and -1078199429, -792203665 == -1870402965
-lui x1, 0xbfbc0
-addi x1, x1, 0xb7b
-lui x2, 0xd0c7f
-addi x2, x2, 0xe6f
+## expect[28] = 491784193
+# testing and 1914405325, 729441135 == 572129613
+lui x1, 0x721b8
+addi x1, x1, 0x1cd
+lui x2, 0x2b7a6
+addi x2, x2, 0x36f
 and x29, x1, x2
-## expect[29] = -1870402965
-# testing and -1184228676, -794757425 == -1876946292
-lui x1, 0xb96a2
-addi x1, x1, 0xabc
-lui x2, 0xd0a0f
-addi x2, x2, 0x6cf
+## expect[29] = 572129613
+# testing and -1393293883, 1860407722 == 752877952
+lui x1, 0xacf40
+addi x1, x1, 0x5c5
+lui x2, 0x6ee39
+addi x2, x2, 0x1aa
 and x30, x1, x2
-## expect[30] = -1876946292
-# testing and 357237982, 504433794 == 335611010
-lui x1, 0x154b0
-addi x1, x1, 0x4de
-lui x2, 0x1e111
-addi x2, x2, 0xc82
+## expect[30] = 752877952
+# testing and 1756201102, -101340509 == 1755676802
+lui x1, 0x68ad8
+addi x1, x1, 0x8e
+lui x2, 0xf9f5b
+addi x2, x2, 0xaa3
 and x31, x1, x2
-## expect[31] = 335611010
+## expect[31] = 1755676802
 addi x1, x0, 0
 addi x2, x0, 0
 ## cycles = 131

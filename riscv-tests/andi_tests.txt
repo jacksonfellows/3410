@@ -73,75 +73,75 @@ addi x1, x1, 0x0
 andi x17, x1, -2048
 ## expect[17] = -2147483648
 # Random cases (N=14)
-# testing andi 2078837821, -1364 == 2078836780
-lui x1, 0x7be89
-addi x1, x1, 0xc3d
-andi x18, x1, -1364
-## expect[18] = 2078836780
-# testing andi -1551200269, -489 == -1551200749
-lui x1, 0xa38a9
-addi x1, x1, 0xff3
-andi x19, x1, -489
-## expect[19] = -1551200749
-# testing andi -193194590, 308 == 288
-lui x1, 0xf47c1
-addi x1, x1, 0x5a2
-andi x20, x1, 308
-## expect[20] = 288
-# testing andi 2082867452, -179 == 2082867276
-lui x1, 0x7c261
-addi x1, x1, 0x8fc
-andi x21, x1, -179
-## expect[21] = 2082867276
-# testing andi -1447688687, 971 == 513
-lui x1, 0xa9b60
-addi x1, x1, 0x611
-andi x22, x1, 971
-## expect[22] = 513
-# testing andi 1226858846, -1907 == 1226858508
-lui x1, 0x49206
-addi x1, x1, 0x15e
-andi x23, x1, -1907
-## expect[23] = 1226858508
-# testing andi -1895185881, 76 == 4
-lui x1, 0x8f09c
-addi x1, x1, 0x227
-andi x24, x1, 76
-## expect[24] = 4
-# testing andi 928068722, 1353 == 1088
-lui x1, 0x37513
-addi x1, x1, 0x472
-andi x25, x1, 1353
-## expect[25] = 1088
-# testing andi 99587267, -947 == 99587137
-lui x1, 0x5ef9
-addi x1, x1, 0x4c3
-andi x26, x1, -947
-## expect[26] = 99587137
-# testing andi 678198487, -1378 == 678197398
-lui x1, 0x286c8
-addi x1, x1, 0xcd7
-andi x27, x1, -1378
-## expect[27] = 678197398
-# testing andi -1056456999, -676 == -1056457640
-lui x1, 0xc107c
-addi x1, x1, 0xed9
-andi x28, x1, -676
-## expect[28] = -1056457640
-# testing andi 624849661, -674 == 624848988
-lui x1, 0x253e7
-addi x1, x1, 0x2fd
-andi x29, x1, -674
-## expect[29] = 624848988
-# testing andi 1988540897, -292 == 1988540608
-lui x1, 0x7686c
-addi x1, x1, 0x9e1
-andi x30, x1, -292
-## expect[30] = 1988540608
-# testing andi 906342550, 1723 == 146
-lui x1, 0x3605b
-addi x1, x1, 0x96
-andi x31, x1, 1723
-## expect[31] = 146
+# testing andi 2122412406, 182 == 54
+lui x1, 0x7e817
+addi x1, x1, 0x176
+andi x18, x1, 182
+## expect[18] = 54
+# testing andi 2081559552, 464 == 0
+lui x1, 0x7c121
+addi x1, x1, 0x400
+andi x19, x1, 464
+## expect[19] = 0
+# testing andi -765626848, 1890 == 1568
+lui x1, 0xd25d7
+addi x1, x1, 0x620
+andi x20, x1, 1890
+## expect[20] = 1568
+# testing andi 1949637916, 1842 == 1296
+lui x1, 0x74352
+addi x1, x1, 0xd1c
+andi x21, x1, 1842
+## expect[21] = 1296
+# testing andi 1753931602, 21 == 16
+lui x1, 0x688ae
+addi x1, x1, 0xf52
+andi x22, x1, 21
+## expect[22] = 16
+# testing andi -1506587115, -1807 == -1506588655
+lui x1, 0xa6335
+addi x1, x1, 0xe15
+andi x23, x1, -1807
+## expect[23] = -1506588655
+# testing andi 2001596873, -715 == 2001596673
+lui x1, 0x774df
+addi x1, x1, 0x1c9
+andi x24, x1, -715
+## expect[24] = 2001596673
+# testing andi -280128578, 2036 == 948
+lui x1, 0xef4d9
+addi x1, x1, 0x3be
+andi x25, x1, 2036
+## expect[25] = 948
+# testing andi -1851657460, -1626 == -1851657980
+lui x1, 0x91a1f
+addi x1, x1, 0x30c
+andi x26, x1, -1626
+## expect[26] = -1851657980
+# testing andi -451584345, -1083 == -451585403
+lui x1, 0xe5156
+addi x1, x1, 0xea7
+andi x27, x1, -1083
+## expect[27] = -451585403
+# testing andi 1440034284, 408 == 392
+lui x1, 0x55d53
+addi x1, x1, 0xdec
+andi x28, x1, 408
+## expect[28] = 392
+# testing andi 521986324, 1847 == 276
+lui x1, 0x1f1ce
+addi x1, x1, 0x114
+andi x29, x1, 1847
+## expect[29] = 276
+# testing andi -1246918611, 207 == 13
+lui x1, 0xb5ad9
+addi x1, x1, 0x82d
+andi x30, x1, 207
+## expect[30] = 13
+# testing andi -784585385, 1542 == 1030
+lui x1, 0xd13c3
+addi x1, x1, 0xd57
+andi x31, x1, 1542
+## expect[31] = 1030
 addi x1, x0, 0
 ## cycles = 83

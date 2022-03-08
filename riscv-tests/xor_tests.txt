@@ -97,97 +97,97 @@ addi x2, x2, 0x0
 xor x18, x1, x2
 ## expect[18] = 0
 # Random cases (N=13)
-# testing xor -544346979, 351725127 == -881128742
-lui x1, 0xdf8df
-addi x1, x1, 0xc9d
-lui x2, 0x14f6e
-addi x2, x2, 0x647
+# testing xor -1396791157, -946386259 == 1797906982
+lui x1, 0xacbeb
+addi x1, x1, 0x88b
+lui x2, 0xc7975
+addi x2, x2, 0xaad
 xor x19, x1, x2
-## expect[19] = -881128742
-# testing xor -2044790383, -1876176583 == 372582568
-lui x1, 0x861f0
-addi x1, x1, 0x991
-lui x2, 0x902bd
-addi x2, x2, 0x139
+## expect[19] = 1797906982
+# testing xor -1121732802, -1955270720 == 911694078
+lui x1, 0xbd23b
+addi x1, x1, 0x73e
+lui x2, 0x8b74f
+addi x2, x2, 0xfc0
 xor x20, x1, x2
-## expect[20] = 372582568
-# testing xor 211941492, 1439680916 == 1500393952
-lui x1, 0xca20
-addi x1, x1, 0x874
-lui x2, 0x55cfd
-addi x2, x2, 0x994
+## expect[20] = 911694078
+# testing xor 229541856, 1093174018 == 1283851490
+lui x1, 0xdae8
+addi x1, x1, 0x7e0
+lui x2, 0x41288
+addi x2, x2, 0x302
 xor x21, x1, x2
-## expect[21] = 1500393952
-# testing xor 477960958, 1352911501 == 1289670771
-lui x1, 0x1c7d2
-addi x1, x1, 0xafe
-lui x2, 0x50a3d
-addi x2, x2, 0xa8d
+## expect[21] = 1283851490
+# testing xor -733511884, -1893739236 == 1532537384
+lui x1, 0xd4478
+addi x1, x1, 0xf34
+lui x2, 0x8f1fd
+addi x2, x2, 0x51c
 xor x22, x1, x2
-## expect[22] = 1289670771
-# testing xor 868414346, 1936333314 == 1084811656
-lui x1, 0x33c2f
-addi x1, x1, 0x38a
-lui x2, 0x736a2
-addi x2, x2, 0xa02
+## expect[22] = 1532537384
+# testing xor -1019870801, -709468996 == 377511187
+lui x1, 0xc3360
+addi x1, x1, 0x1af
+lui x2, 0xd5b66
+addi x2, x2, 0xcbc
 xor x23, x1, x2
-## expect[23] = 1084811656
-# testing xor 1095360990, -211473367 == -1305686537
-lui x1, 0x4149e
-addi x1, x1, 0x1de
-lui x2, 0xf3653
-addi x2, x2, 0xc29
+## expect[23] = 377511187
+# testing xor 1805643535, 1672565097 == 137281126
+lui x1, 0x6b9ff
+addi x1, x1, 0xf0f
+lui x2, 0x63b15
+addi x2, x2, 0x169
 xor x24, x1, x2
-## expect[24] = -1305686537
-# testing xor 834241077, 1536557343 == 1781498666
-lui x1, 0x31b98
-addi x1, x1, 0x235
-lui x2, 0x5b960
-addi x2, x2, 0x11f
+## expect[24] = 137281126
+# testing xor -439738430, 1133605178 == -1503957256
+lui x1, 0xe5ca2
+addi x1, x1, 0xfc2
+lui x2, 0x43917
+addi x2, x2, 0x13a
 xor x25, x1, x2
-## expect[25] = 1781498666
-# testing xor 1201807759, -654387721 == -1621298056
-lui x1, 0x47a22
-addi x1, x1, 0x18f
-lui x2, 0xd8fed
-addi x2, x2, 0x5f7
+## expect[25] = -1503957256
+# testing xor 1195220126, -464557747 == -1552747053
+lui x1, 0x473da
+addi x1, x1, 0xc9e
+lui x2, 0xe44f7
+addi x2, x2, 0x94d
 xor x26, x1, x2
-## expect[26] = -1621298056
-# testing xor -236922122, -1922817713 == 2089089977
-lui x1, 0xf1e0e
-addi x1, x1, 0xaf6
-lui x2, 0x8d642
-addi x2, x2, 0x14f
+## expect[26] = -1552747053
+# testing xor 1611072933, 386299358 == 1996583035
+lui x1, 0x60070
+addi x1, x1, 0x5a5
+lui x2, 0x17067
+addi x2, x2, 0x5de
 xor x27, x1, x2
-## expect[27] = 2089089977
-# testing xor 1393145175, -1713992345 == -891340752
-lui x1, 0x5309b
-addi x1, x1, 0x557
-lui x2, 0x99d69
-addi x2, x2, 0xd67
+## expect[27] = 1996583035
+# testing xor 2043750254, 356749382 == 1821554472
+lui x1, 0x79d12
+addi x1, x1, 0x76e
+lui x2, 0x15439
+addi x2, x2, 0x46
 xor x28, x1, x2
-## expect[28] = -891340752
-# testing xor -698550871, 865180760 == -439522831
-lui x1, 0xd65cf
-addi x1, x1, 0x5a9
-lui x2, 0x3391a
-addi x2, x2, 0xc58
+## expect[28] = 1821554472
+# testing xor 409298519, -178166550 == -318504259
+lui x1, 0x18656
+addi x1, x1, 0x657
+lui x2, 0xf5616
+addi x2, x2, 0x4ea
 xor x29, x1, x2
-## expect[29] = -439522831
-# testing xor -695943427, 478274617 == -905618748
-lui x1, 0xd684c
-addi x1, x1, 0xefd
-lui x2, 0x1c81e
-addi x2, x2, 0x439
+## expect[29] = -318504259
+# testing xor -1223275004, 2118998239 == -916777253
+lui x1, 0xb7165
+addi x1, x1, 0xe04
+lui x2, 0x7e4d6
+addi x2, x2, 0x8df
 xor x30, x1, x2
-## expect[30] = -905618748
-# testing xor -814509615, 1357819616 == -1617084623
-lui x1, 0xcf739
-addi x1, x1, 0x1d1
-lui x2, 0x50eeb
-addi x2, x2, 0xee0
+## expect[30] = -916777253
+# testing xor -848684037, -1104864843 == 1934557774
+lui x1, 0xcd6a2
+addi x1, x1, 0xbfb
+lui x2, 0xbe252
+addi x2, x2, 0x9b5
 xor x31, x1, x2
-## expect[31] = -1617084623
+## expect[31] = 1934557774
 addi x1, x0, 0
 addi x2, x0, 0
 ## cycles = 131
