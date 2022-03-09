@@ -548,51 +548,51 @@ end TCL_Generic;
     <a name="circuitnamedbox" val="true"/>
     <a name="circuitvhdlpath" val=""/>
     <wire from="(150,180)" to="(150,250)"/>
+    <wire from="(150,110)" to="(150,180)"/>
     <wire from="(240,30)" to="(240,100)"/>
     <wire from="(250,80)" to="(250,150)"/>
     <wire from="(220,90)" to="(280,90)"/>
+    <wire from="(50,270)" to="(300,270)"/>
     <wire from="(170,230)" to="(170,240)"/>
     <wire from="(170,50)" to="(170,60)"/>
-    <wire from="(150,110)" to="(200,110)"/>
-    <wire from="(150,250)" to="(200,250)"/>
-    <wire from="(170,170)" to="(170,190)"/>
-    <wire from="(220,210)" to="(260,210)"/>
-    <wire from="(170,190)" to="(170,220)"/>
-    <wire from="(170,130)" to="(170,160)"/>
-    <wire from="(170,70)" to="(170,100)"/>
-    <wire from="(170,190)" to="(200,190)"/>
-    <wire from="(170,230)" to="(200,230)"/>
-    <wire from="(170,170)" to="(200,170)"/>
-    <wire from="(170,130)" to="(200,130)"/>
-    <wire from="(170,70)" to="(200,70)"/>
-    <wire from="(170,50)" to="(200,50)"/>
-    <wire from="(150,70)" to="(150,110)"/>
-    <wire from="(220,30)" to="(240,30)"/>
-    <wire from="(260,70)" to="(280,70)"/>
-    <wire from="(150,110)" to="(150,180)"/>
-    <wire from="(50,270)" to="(300,270)"/>
     <wire from="(170,220)" to="(170,230)"/>
     <wire from="(170,160)" to="(170,170)"/>
     <wire from="(170,120)" to="(170,130)"/>
     <wire from="(170,60)" to="(170,70)"/>
+    <wire from="(150,110)" to="(200,110)"/>
+    <wire from="(150,250)" to="(200,250)"/>
     <wire from="(150,40)" to="(200,40)"/>
     <wire from="(150,180)" to="(200,180)"/>
     <wire from="(260,70)" to="(260,210)"/>
+    <wire from="(170,170)" to="(170,190)"/>
     <wire from="(170,100)" to="(170,120)"/>
+    <wire from="(220,210)" to="(260,210)"/>
     <wire from="(240,100)" to="(280,100)"/>
+    <wire from="(170,190)" to="(170,220)"/>
+    <wire from="(170,130)" to="(170,160)"/>
+    <wire from="(170,70)" to="(170,100)"/>
     <wire from="(150,40)" to="(150,70)"/>
     <wire from="(170,20)" to="(170,50)"/>
+    <wire from="(170,130)" to="(200,130)"/>
+    <wire from="(170,190)" to="(200,190)"/>
+    <wire from="(170,230)" to="(200,230)"/>
+    <wire from="(170,170)" to="(200,170)"/>
+    <wire from="(170,70)" to="(200,70)"/>
+    <wire from="(170,120)" to="(200,120)"/>
+    <wire from="(170,100)" to="(200,100)"/>
+    <wire from="(170,50)" to="(200,50)"/>
+    <wire from="(170,60)" to="(200,60)"/>
     <wire from="(170,240)" to="(200,240)"/>
     <wire from="(170,220)" to="(200,220)"/>
     <wire from="(170,160)" to="(200,160)"/>
-    <wire from="(170,120)" to="(200,120)"/>
-    <wire from="(170,100)" to="(200,100)"/>
-    <wire from="(170,60)" to="(200,60)"/>
     <wire from="(220,150)" to="(250,150)"/>
     <wire from="(250,80)" to="(280,80)"/>
     <wire from="(300,110)" to="(300,270)"/>
+    <wire from="(150,70)" to="(150,110)"/>
     <wire from="(100,80)" to="(120,80)"/>
     <wire from="(320,90)" to="(470,90)"/>
+    <wire from="(220,30)" to="(240,30)"/>
+    <wire from="(260,70)" to="(280,70)"/>
     <wire from="(140,70)" to="(150,70)"/>
     <comp lib="0" loc="(470,90)" name="Pin">
       <a name="facing" val="west"/>
@@ -847,6 +847,7 @@ end TCL_Generic;
     <wire from="(970,540)" to="(970,550)"/>
     <wire from="(590,240)" to="(640,240)"/>
     <wire from="(1350,280)" to="(1450,280)"/>
+    <wire from="(1060,580)" to="(1060,670)"/>
     <wire from="(650,490)" to="(650,560)"/>
     <wire from="(730,290)" to="(790,290)"/>
     <wire from="(600,180)" to="(640,180)"/>
@@ -869,9 +870,9 @@ end TCL_Generic;
     <wire from="(590,350)" to="(660,350)"/>
     <wire from="(1620,100)" to="(1640,100)"/>
     <wire from="(1100,190)" to="(1100,230)"/>
-    <wire from="(1360,240)" to="(1380,240)"/>
     <wire from="(1340,300)" to="(1360,300)"/>
     <wire from="(1380,100)" to="(1400,100)"/>
+    <wire from="(1360,240)" to="(1380,240)"/>
     <wire from="(220,140)" to="(290,140)"/>
     <wire from="(590,420)" to="(670,420)"/>
     <wire from="(1000,530)" to="(1010,530)"/>
@@ -896,6 +897,7 @@ end TCL_Generic;
     <wire from="(690,320)" to="(730,320)"/>
     <wire from="(970,520)" to="(1010,520)"/>
     <wire from="(1540,420)" to="(1540,560)"/>
+    <wire from="(590,460)" to="(590,670)"/>
     <wire from="(1180,560)" to="(1230,560)"/>
     <wire from="(790,320)" to="(900,320)"/>
     <wire from="(1620,120)" to="(1620,180)"/>
@@ -935,6 +937,7 @@ end TCL_Generic;
     <wire from="(1740,160)" to="(1810,160)"/>
     <wire from="(940,240)" to="(960,240)"/>
     <wire from="(1590,410)" to="(1660,410)"/>
+    <wire from="(590,670)" to="(1060,670)"/>
     <wire from="(620,160)" to="(640,160)"/>
     <wire from="(290,220)" to="(320,220)"/>
     <wire from="(670,200)" to="(700,200)"/>
@@ -952,6 +955,7 @@ end TCL_Generic;
     <wire from="(590,230)" to="(640,230)"/>
     <wire from="(1190,120)" to="(1230,120)"/>
     <wire from="(1420,210)" to="(1420,300)"/>
+    <wire from="(1400,260)" to="(1400,670)"/>
     <wire from="(320,200)" to="(320,220)"/>
     <wire from="(590,320)" to="(630,320)"/>
     <wire from="(600,170)" to="(640,170)"/>
@@ -1001,6 +1005,7 @@ end TCL_Generic;
     <wire from="(790,320)" to="(790,340)"/>
     <wire from="(120,300)" to="(160,300)"/>
     <wire from="(120,140)" to="(160,140)"/>
+    <wire from="(1060,670)" to="(1060,680)"/>
     <wire from="(1010,540)" to="(1010,560)"/>
     <wire from="(690,280)" to="(860,280)"/>
     <wire from="(650,560)" to="(820,560)"/>
@@ -1010,6 +1015,7 @@ end TCL_Generic;
     <wire from="(600,160)" to="(620,160)"/>
     <wire from="(930,220)" to="(930,260)"/>
     <wire from="(1170,580)" to="(1180,580)"/>
+    <wire from="(1110,680)" to="(1120,680)"/>
     <wire from="(660,580)" to="(820,580)"/>
     <wire from="(590,310)" to="(660,310)"/>
     <wire from="(590,390)" to="(660,390)"/>
@@ -1043,6 +1049,7 @@ end TCL_Generic;
     <wire from="(1830,240)" to="(1900,240)"/>
     <wire from="(1130,160)" to="(1130,400)"/>
     <wire from="(940,200)" to="(940,240)"/>
+    <wire from="(1060,680)" to="(1070,680)"/>
     <wire from="(1380,240)" to="(1380,290)"/>
     <wire from="(990,280)" to="(990,380)"/>
     <wire from="(1800,140)" to="(1810,140)"/>
@@ -1056,6 +1063,7 @@ end TCL_Generic;
     <wire from="(1600,170)" to="(1600,280)"/>
     <wire from="(1340,310)" to="(1360,310)"/>
     <wire from="(1050,190)" to="(1060,190)"/>
+    <wire from="(1120,670)" to="(1400,670)"/>
     <wire from="(90,180)" to="(160,180)"/>
     <wire from="(730,430)" to="(740,430)"/>
     <wire from="(1170,300)" to="(1190,300)"/>
@@ -1078,6 +1086,7 @@ end TCL_Generic;
     <wire from="(1310,170)" to="(1560,170)"/>
     <wire from="(720,270)" to="(820,270)"/>
     <wire from="(1270,250)" to="(1330,250)"/>
+    <wire from="(1120,670)" to="(1120,680)"/>
     <wire from="(650,340)" to="(650,490)"/>
     <wire from="(620,160)" to="(620,500)"/>
     <wire from="(640,330)" to="(640,480)"/>
@@ -1199,11 +1208,6 @@ end TCL_Generic;
       <a name="bit4" val="0"/>
     </comp>
     <comp loc="(1800,100)" name="selectOutputByte"/>
-    <comp lib="0" loc="(1400,260)" name="Constant">
-      <a name="facing" val="west"/>
-      <a name="width" val="4"/>
-      <a name="value" val="0xf"/>
-    </comp>
     <comp lib="0" loc="(660,20)" name="Splitter">
       <a name="facing" val="west"/>
       <a name="incoming" val="12"/>
@@ -1348,365 +1352,76 @@ end TCL_Generic;
     </comp>
     <comp lib="1" loc="(790,410)" name="AND Gate"/>
     <comp lib="10" loc="(550,140)" name="RISC-VProgramROM">
-      <a name="contents">## desc = Autogenerated test file for sw/lw (wrap arounds allowed)
-# Random cases (N=29)
-# testing that a store to 0x156(0x9ba451a8) does not "wrap around"
-addi x1, x0, 1
-lui x2, 0x45
-addi x2, x2, 0x1a8
-sw x1, 0x156(x2)
-lui x2, 0x9ba45
-addi x2, x2, 0x1a8
-sw x0, 0x156(x2)
-lui x2, 0x45
-addi x2, x2, 0x1a8
-lw x3, 0x156(x2)
-## expect[3] = 1148965725
-# testing that a store to 0x469(0x4da16824) does not "wrap around"
-addi x1, x0, 1
-lui x2, 0x17
-addi x2, x2, 0x824
-sw x1, 0x469(x2)
-lui x2, 0x4da17
-addi x2, x2, 0x824
-sw x0, 0x469(x2)
-lui x2, 0x17
-addi x2, x2, 0x824
-lw x4, 0x469(x2)
-## expect[4] = -2083035039
-# testing that a store to 0xba3(0x96d5dfec) does not "wrap around"
-addi x1, x0, 1
-lui x2, 0x5e
-addi x2, x2, 0xfec
-sw x1, 0xba3(x2)
-lui x2, 0x96d5e
-addi x2, x2, 0xfec
-sw x0, 0xba3(x2)
-lui x2, 0x5e
-addi x2, x2, 0xfec
-lw x5, 0xba3(x2)
-## expect[5] = -375971340
-# testing that a store to 0x6cf(0x4559c010) does not "wrap around"
-addi x1, x0, 1
-lui x2, 0x9c
-addi x2, x2, 0x10
-sw x1, 0x6cf(x2)
-lui x2, 0x4559c
-addi x2, x2, 0x10
-sw x0, 0x6cf(x2)
-lui x2, 0x9c
-addi x2, x2, 0x10
-lw x6, 0x6cf(x2)
-## expect[6] = -1532657132
-# testing that a store to 0xc4c(0xad5401f8) does not "wrap around"
-addi x1, x0, 1
-lui x2, 0x40
-addi x2, x2, 0x1f8
-sw x1, 0xc4c(x2)
-lui x2, 0xad540
-addi x2, x2, 0x1f8
-sw x0, 0xc4c(x2)
-lui x2, 0x40
-addi x2, x2, 0x1f8
-lw x7, 0xc4c(x2)
-## expect[7] = -472999116
-# testing that a store to 0xf5c(0xa96621f4) does not "wrap around"
-addi x1, x0, 1
-lui x2, 0x62
-addi x2, x2, 0x1f4
-sw x1, 0xf5c(x2)
-lui x2, 0xa9662
-addi x2, x2, 0x1f4
-sw x0, 0xf5c(x2)
-lui x2, 0x62
-addi x2, x2, 0x1f4
-lw x8, 0xf5c(x2)
-## expect[8] = 1475194818
-# testing that a store to 0xd1c(0x625b70a0) does not "wrap around"
-addi x1, x0, 1
-lui x2, 0xb7
-addi x2, x2, 0xa0
-sw x1, 0xd1c(x2)
-lui x2, 0x625b7
-addi x2, x2, 0xa0
-sw x0, 0xd1c(x2)
-lui x2, 0xb7
-addi x2, x2, 0xa0
-lw x9, 0xd1c(x2)
-## expect[9] = -427631631
-# testing that a store to 0x359(0xf66a1130) does not "wrap around"
-addi x1, x0, 1
-lui x2, 0xa1
-addi x2, x2, 0x130
-sw x1, 0x359(x2)
-lui x2, 0xf66a1
-addi x2, x2, 0x130
-sw x0, 0x359(x2)
-lui x2, 0xa1
-addi x2, x2, 0x130
-lw x10, 0x359(x2)
-## expect[10] = -1102839097
-# testing that a store to 0xcd(0x25e41ae0) does not "wrap around"
-addi x1, x0, 1
-lui x2, 0x42
-addi x2, x2, 0xae0
-sw x1, 0xcd(x2)
-lui x2, 0x25e42
-addi x2, x2, 0xae0
-sw x0, 0xcd(x2)
-lui x2, 0x42
-addi x2, x2, 0xae0
-lw x11, 0xcd(x2)
-## expect[11] = 505404610
-# testing that a store to 0x9b8(0xfe128038) does not "wrap around"
-addi x1, x0, 1
-lui x2, 0x28
-addi x2, x2, 0x38
-sw x1, 0x9b8(x2)
-lui x2, 0xfe128
-addi x2, x2, 0x38
-sw x0, 0x9b8(x2)
-lui x2, 0x28
-addi x2, x2, 0x38
-lw x12, 0x9b8(x2)
-## expect[12] = -982425247
-# testing that a store to 0x7b9(0x8c5525d8) does not "wrap around"
-addi x1, x0, 1
-lui x2, 0x52
-addi x2, x2, 0x5d8
-sw x1, 0x7b9(x2)
-lui x2, 0x8c552
-addi x2, x2, 0x5d8
-sw x0, 0x7b9(x2)
-lui x2, 0x52
-addi x2, x2, 0x5d8
-lw x13, 0x7b9(x2)
-## expect[13] = 132749661
-# testing that a store to 0xfce(0x38653d0c) does not "wrap around"
-addi x1, x0, 1
-lui x2, 0x54
-addi x2, x2, 0xd0c
-sw x1, 0xfce(x2)
-lui x2, 0x38654
-addi x2, x2, 0xd0c
-sw x0, 0xfce(x2)
-lui x2, 0x54
-addi x2, x2, 0xd0c
-lw x14, 0xfce(x2)
-## expect[14] = 1015133326
-# testing that a store to 0xa4f(0xc5826564) does not "wrap around"
-addi x1, x0, 1
-lui x2, 0x26
-addi x2, x2, 0x564
-sw x1, 0xa4f(x2)
-lui x2, 0xc5826
-addi x2, x2, 0x564
-sw x0, 0xa4f(x2)
-lui x2, 0x26
-addi x2, x2, 0x564
-lw x15, 0xa4f(x2)
-## expect[15] = -1102756409
-# testing that a store to 0x9b(0x1a3b5090) does not "wrap around"
-addi x1, x0, 1
-lui x2, 0xb5
-addi x2, x2, 0x90
-sw x1, 0x9b(x2)
-lui x2, 0x1a3b5
-addi x2, x2, 0x90
-sw x0, 0x9b(x2)
-lui x2, 0xb5
-addi x2, x2, 0x90
-lw x16, 0x9b(x2)
-## expect[16] = 928570185
-# testing that a store to 0x7ce(0xd8028e0c) does not "wrap around"
-addi x1, x0, 1
-lui x2, 0x29
-addi x2, x2, 0xe0c
-sw x1, 0x7ce(x2)
-lui x2, 0xd8029
-addi x2, x2, 0xe0c
-sw x0, 0x7ce(x2)
-lui x2, 0x29
-addi x2, x2, 0xe0c
-lw x17, 0x7ce(x2)
-## expect[17] = -500556235
-# testing that a store to 0x155(0xaf87bf58) does not "wrap around"
-addi x1, x0, 1
-lui x2, 0x7c
-addi x2, x2, 0xf58
-sw x1, 0x155(x2)
-lui x2, 0xaf87c
-addi x2, x2, 0xf58
-sw x0, 0x155(x2)
-lui x2, 0x7c
-addi x2, x2, 0xf58
-lw x18, 0x155(x2)
-## expect[18] = -587468091
-# testing that a store to 0x763(0x54fca388) does not "wrap around"
-addi x1, x0, 1
-lui x2, 0xca
-addi x2, x2, 0x388
-sw x1, 0x763(x2)
-lui x2, 0x54fca
-addi x2, x2, 0x388
-sw x0, 0x763(x2)
-lui x2, 0xca
-addi x2, x2, 0x388
-lw x19, 0x763(x2)
-## expect[19] = -1536351868
-# testing that a store to 0xe28(0xbcfd674c) does not "wrap around"
-addi x1, x0, 1
-lui x2, 0xd6
-addi x2, x2, 0x74c
-sw x1, 0xe28(x2)
-lui x2, 0xbcfd6
-addi x2, x2, 0x74c
-sw x0, 0xe28(x2)
-lui x2, 0xd6
-addi x2, x2, 0x74c
-lw x20, 0xe28(x2)
-## expect[20] = -759315806
-# testing that a store to 0x802(0xa65c49d8) does not "wrap around"
-addi x1, x0, 1
-lui x2, 0xc5
-addi x2, x2, 0x9d8
-sw x1, 0x802(x2)
-lui x2, 0xa65c5
-addi x2, x2, 0x9d8
-sw x0, 0x802(x2)
-lui x2, 0xc5
-addi x2, x2, 0x9d8
-lw x21, 0x802(x2)
-## expect[21] = 1481176633
-# testing that a store to 0xd7(0xb4ea5be0) does not "wrap around"
-addi x1, x0, 1
-lui x2, 0xa6
-addi x2, x2, 0xbe0
-sw x1, 0xd7(x2)
-lui x2, 0xb4ea6
-addi x2, x2, 0xbe0
-sw x0, 0xd7(x2)
-lui x2, 0xa6
-addi x2, x2, 0xbe0
-lw x22, 0xd7(x2)
-## expect[22] = 1071915947
-# testing that a store to 0xa86(0xeeabb678) does not "wrap around"
-addi x1, x0, 1
-lui x2, 0xbb
-addi x2, x2, 0x678
-sw x1, 0xa86(x2)
-lui x2, 0xeeabb
-addi x2, x2, 0x678
-sw x0, 0xa86(x2)
-lui x2, 0xbb
-addi x2, x2, 0x678
-lw x23, 0xa86(x2)
-## expect[23] = -364876463
-# testing that a store to 0x940(0xf27275ac) does not "wrap around"
-addi x1, x0, 1
-lui x2, 0x27
-addi x2, x2, 0x5ac
-sw x1, 0x940(x2)
-lui x2, 0xf2727
-addi x2, x2, 0x5ac
-sw x0, 0x940(x2)
-lui x2, 0x27
-addi x2, x2, 0x5ac
-lw x24, 0x940(x2)
-## expect[24] = 396272619
-# testing that a store to 0xf6b(0x3b816b3c) does not "wrap around"
-addi x1, x0, 1
-lui x2, 0x17
-addi x2, x2, 0xb3c
-sw x1, 0xf6b(x2)
-lui x2, 0x3b817
-addi x2, x2, 0xb3c
-sw x0, 0xf6b(x2)
-lui x2, 0x17
-addi x2, x2, 0xb3c
-lw x25, 0xf6b(x2)
-## expect[25] = -1930563926
-# testing that a store to 0x51b(0x30294fb0) does not "wrap around"
-addi x1, x0, 1
-lui x2, 0x95
-addi x2, x2, 0xfb0
-sw x1, 0x51b(x2)
-lui x2, 0x30295
-addi x2, x2, 0xfb0
-sw x0, 0x51b(x2)
-lui x2, 0x95
-addi x2, x2, 0xfb0
-lw x26, 0x51b(x2)
-## expect[26] = -89582884
-# testing that a store to 0xda3(0xe51a5790) does not "wrap around"
-addi x1, x0, 1
-lui x2, 0xa5
-addi x2, x2, 0x790
-sw x1, 0xda3(x2)
-lui x2, 0xe51a5
-addi x2, x2, 0x790
-sw x0, 0xda3(x2)
-lui x2, 0xa5
-addi x2, x2, 0x790
-lw x27, 0xda3(x2)
-## expect[27] = 1939430651
-# testing that a store to 0xf26(0xcfe76ac4) does not "wrap around"
-addi x1, x0, 1
-lui x2, 0x77
-addi x2, x2, 0xac4
-sw x1, 0xf26(x2)
-lui x2, 0xcfe77
-addi x2, x2, 0xac4
-sw x0, 0xf26(x2)
-lui x2, 0x77
-addi x2, x2, 0xac4
-lw x28, 0xf26(x2)
-## expect[28] = 1411790356
-# testing that a store to 0x991(0xeeb1ef04) does not "wrap around"
-addi x1, x0, 1
-lui x2, 0x1f
-addi x2, x2, 0xf04
-sw x1, 0x991(x2)
-lui x2, 0xeeb1f
-addi x2, x2, 0xf04
-sw x0, 0x991(x2)
-lui x2, 0x1f
-addi x2, x2, 0xf04
-lw x29, 0x991(x2)
-## expect[29] = -1155488751
-# testing that a store to 0x6ec(0x7eb66e88) does not "wrap around"
-addi x1, x0, 1
-lui x2, 0x67
-addi x2, x2, 0xe88
-sw x1, 0x6ec(x2)
-lui x2, 0x7eb67
-addi x2, x2, 0xe88
-sw x0, 0x6ec(x2)
-lui x2, 0x67
-addi x2, x2, 0xe88
-lw x30, 0x6ec(x2)
-## expect[30] = -56069300
-# testing that a store to 0x707(0x350fcd10) does not "wrap around"
-addi x1, x0, 1
-lui x2, 0xfd
-addi x2, x2, 0xd10
-sw x1, 0x707(x2)
-lui x2, 0x350fd
-addi x2, x2, 0xd10
-sw x0, 0x707(x2)
-lui x2, 0xfd
-addi x2, x2, 0xd10
-lw x31, 0x707(x2)
-## expect[31] = -1421229467
-addi x1, x0, 0
-addi x2, x0, 0
-## cycles = 292
+      <a name="contents">## desc = Byte reversal program
+## cycles = 36
+
+#SETUP - do not delete
+
+lui t0, 0x12345
+addi t0, t0, 0x678
+sw t0, 0(x0)
+
+lui t0, 0x13f44
+addi t0, t0, 0x64c
+sw t0, 4(x0)
+
+#TODO 1
+#reverse word at memaddr 0 with bitmasks, store in t0
+
+lw t1, 0(x0)
+
+andi t0, t1, 0xff
+slli t0, t0, 8
+
+lui t3, 0x10
+addi t3, t3, 0xf00
+and t2, t1, t3
+srai t2, t2, 8
+or t0, t0, t2
+slli t0, t0, 8
+
+addi t3, x0, 0
+lui t3, 0x00ff0
+and t2, t1, t3
+srai t2, t2, 16
+or t0, t0, t2
+slli t0, t0, 8
+
+lui t3, 0xff000
+and t2, t1, t3
+srai t2, t2, 24
+or t0, t0, t2
+
+## expect[5] = 0x78563412
+
+#TODO 2
+#reverse word at memaddr 4 with lb/sb, store in t1
+
+lb t1, 4(x0)
+sb t1, 11(x0)
+
+lb t1, 5(x0)
+sb t1, 10(x0)
+
+lb t1, 6(x0)
+sb t1, 9(x0)
+
+lb t1, 7(x0)
+sb t1, 8(x0)
+
+lw t1, 8(x0)
+
+## expect[6] = 0x4c46f413
+
+#TODO 3
+#xor both reversed words, store in t2
+
+xor t2, t0, t1
+
+## expect[7] = 0x3410c001
+
+addi t3, x0, 0
 </a>
-    </comp>
-    <comp lib="2" loc="(1330,250)" name="Multiplexer">
-      <a name="facing" val="west"/>
-      <a name="width" val="4"/>
-      <a name="enable" val="false"/>
     </comp>
     <comp lib="2" loc="(1950,190)" name="Multiplexer">
       <a name="width" val="32"/>
@@ -1755,7 +1470,6 @@ addi x2, x0, 0
       <a name="enable" val="false"/>
     </comp>
     <comp lib="10" loc="(1610,120)" name="RAM"/>
-    <comp lib="0" loc="(1060,580)" name="Constant"/>
     <comp lib="0" loc="(1130,160)" name="Splitter">
       <a name="fanout" val="4"/>
       <a name="incoming" val="32"/>
@@ -1795,6 +1509,15 @@ addi x2, x0, 0
     <comp loc="(1530,350)" name="allZeros"/>
     <comp lib="1" loc="(1500,220)" name="AND Gate">
       <a name="facing" val="north"/>
+    </comp>
+    <comp lib="2" loc="(1330,250)" name="Multiplexer">
+      <a name="facing" val="west"/>
+      <a name="width" val="4"/>
+      <a name="enable" val="false"/>
+    </comp>
+    <comp lib="0" loc="(1110,680)" name="Bit Extender">
+      <a name="in_width" val="1"/>
+      <a name="out_width" val="4"/>
     </comp>
   </circuit>
   <circuit name="allZeros">
