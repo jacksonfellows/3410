@@ -73,75 +73,75 @@ addi x1, x1, 0x0
 xori x17, x1, -2048
 ## expect[17] = 2147481600
 # Random cases (N=14)
-# testing xori -1767673766, 1259 == -1767672655
-lui x1, 0x96a37
-addi x1, x1, 0x5a
-xori x18, x1, 1259
-## expect[18] = -1767672655
-# testing xori -282433269, 918 == -282432867
-lui x1, 0xef2a7
-addi x1, x1, 0x90b
-xori x19, x1, 918
-## expect[19] = -282432867
-# testing xori -485728237, -226 == 485728013
-lui x1, 0xe30c6
-addi x1, x1, 0x13
-xori x20, x1, -226
-## expect[20] = 485728013
-# testing xori -1137298285, -1310 == 1137299057
-lui x1, 0xbc363
-addi x1, x1, 0x493
-xori x21, x1, -1310
-## expect[21] = 1137299057
-# testing xori 1451807401, -8 == -1451807407
-lui x1, 0x5688d
-addi x1, x1, 0x2a9
-xori x22, x1, -8
-## expect[22] = -1451807407
-# testing xori -1556893012, -1363 == 1556891649
-lui x1, 0xa333b
-addi x1, x1, 0x2ac
-xori x23, x1, -1363
-## expect[23] = 1556891649
-# testing xori 614934407, 924 == 614933531
-lui x1, 0x24a72
-addi x1, x1, 0x787
-xori x24, x1, 924
-## expect[24] = 614933531
-# testing xori 839845293, 869 == 839845576
-lui x1, 0x320f0
-addi x1, x1, 0x5ad
-xori x25, x1, 869
-## expect[25] = 839845576
-# testing xori -1355090632, -679 == 1355090017
-lui x1, 0xaf3af
-addi x1, x1, 0x538
-xori x26, x1, -679
-## expect[26] = 1355090017
-# testing xori -2093364038, -896 == 2093363258
-lui x1, 0x8339d
-addi x1, x1, 0xcba
-xori x27, x1, -896
-## expect[27] = 2093363258
-# testing xori 1709744545, -1448 == -1709745159
-lui x1, 0x65e8a
-addi x1, x1, 0x1a1
-xori x28, x1, -1448
-## expect[28] = -1709745159
-# testing xori -1550143534, -1806 == 1550145312
-lui x1, 0xa39ab
-addi x1, x1, 0xfd2
-xori x29, x1, -1806
-## expect[29] = 1550145312
-# testing xori 665660182, 711 == 665659857
-lui x1, 0x27ad3
-addi x1, x1, 0xb16
-xori x30, x1, 711
-## expect[30] = 665659857
-# testing xori -1701128556, 741 == -1701129103
-lui x1, 0x9a9ad
-addi x1, x1, 0x694
-xori x31, x1, 741
-## expect[31] = -1701129103
+# testing xori 1227600480, -184 == -1227600600
+lui x1, 0x492bb
+addi x1, x1, 0x260
+xori x18, x1, -184
+## expect[18] = -1227600600
+# testing xori 851908152, -2001 == -851907049
+lui x1, 0x32c71
+addi x1, x1, 0x638
+xori x19, x1, -2001
+## expect[19] = -851907049
+# testing xori 537018724, 1787 == 537020319
+lui x1, 0x20024
+addi x1, x1, 0x164
+xori x20, x1, 1787
+## expect[20] = 537020319
+# testing xori 1463043269, -1474 == -1463042309
+lui x1, 0x57344
+addi x1, x1, 0x4c5
+xori x21, x1, -1474
+## expect[21] = -1463042309
+# testing xori 202643097, 1690 == 202641411
+lui x1, 0xc141
+addi x1, x1, 0x699
+xori x22, x1, 1690
+## expect[22] = 202641411
+# testing xori -1520301196, 1404 == -1520300536
+lui x1, 0xa5621
+addi x1, x1, 0xb74
+xori x23, x1, 1404
+## expect[23] = -1520300536
+# testing xori 1014337808, -1587 == -1014339363
+lui x1, 0x3c759
+addi x1, x1, 0x110
+xori x24, x1, -1587
+## expect[24] = -1014339363
+# testing xori -1955673413, -1994 == 1955672717
+lui x1, 0x8b6ed
+addi x1, x1, 0xabb
+xori x25, x1, -1994
+## expect[25] = 1955672717
+# testing xori 1012381542, -1633 == -1012379911
+lui x1, 0x3c57b
+addi x1, x1, 0x766
+xori x26, x1, -1633
+## expect[26] = -1012379911
+# testing xori -2031614306, 1030 == -2031615336
+lui x1, 0x86e80
+addi x1, x1, 0x69e
+xori x27, x1, 1030
+## expect[27] = -2031615336
+# testing xori 1406531572, 1771 == 1406529823
+lui x1, 0x53d5f
+addi x1, x1, 0x7f4
+xori x28, x1, 1771
+## expect[28] = 1406529823
+# testing xori 1333766467, -637 == -1333766976
+lui x1, 0x4f7fb
+addi x1, x1, 0x943
+xori x29, x1, -637
+## expect[29] = -1333766976
+# testing xori -160410244, -612 == 160409824
+lui x1, 0xf6705
+addi x1, x1, 0x57c
+xori x30, x1, -612
+## expect[30] = 160409824
+# testing xori -1271028928, -1484 == 1271028084
+lui x1, 0xb43da
+addi x1, x1, 0x340
+xori x31, x1, -1484
+## expect[31] = 1271028084
 addi x1, x0, 0
 ## cycles = 83

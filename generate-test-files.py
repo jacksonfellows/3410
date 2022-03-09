@@ -176,8 +176,13 @@ def gen_tests_sw_lw(wrap_arounds = False):
     print(f'## cycles = {cycles}')
     return cycles
 
+def sign_extend(value, bits):
+    sign_bit = 1 << (bits - 1)
+    return (value & (sign_bit - 1)) - (value & sign_bit)
+
 def gen_test_case_sb_lb(val, address, offset, val_reg, address_reg, dest_reg):
     cycles = 0
+    expected = ((val + 0x80) & 0xff) - 0x80
     if offset + address > (1 << 22):
         print(f'# testing that a store to 0x{offset:x}(0x{address:x}) does not "wrap around"')
         wrapped = np.uint32(address) & 0xfffff
@@ -189,7 +194,7 @@ def gen_test_case_sb_lb(val, address, offset, val_reg, address_reg, dest_reg):
         cycles += load_constant(address_reg, wrapped)
         print(f'lb x{dest_reg}, 0x{offset:x}(x{address_reg})')
         cycles += 3
-        print(f'## expect[{dest_reg}] = {val}')
+        print(f'## expect[{dest_reg}] = {expected}')
     else:
         print(f'# testing storing then loading {val} at 0x{offset:x}(0x{address:x})')
         cycles += load_constant(val_reg, val)
@@ -197,7 +202,7 @@ def gen_test_case_sb_lb(val, address, offset, val_reg, address_reg, dest_reg):
         print(f'sb x{val_reg}, 0x{offset:x}(x{address_reg})')
         print(f'lb x{dest_reg}, 0x{offset:x}(x{address_reg})')
         cycles += 2
-        print(f'## expect[{dest_reg}] = {val}')
+        print(f'## expect[{dest_reg}] = {expected}')
     return cycles
 
 def gen_tests_sb_lb(wrap_arounds = False):
