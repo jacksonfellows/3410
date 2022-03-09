@@ -1,0 +1,19 @@
+## desc = Test loading a word byte by byte
+## cycles = 7
+
+lui x1, 0x12345
+addi x1, x1, 0x678
+sw x1, 0(x0)
+## expect[1] = 0x12345678
+
+lb x2, 0(x0)
+## expect[2] = 0x78
+
+lb x3, 1(x0)
+## expect[3] = 0x56
+
+lb x4, 2(x0)
+## expect[4] = 0x34
+
+lb x5, 3(x0)
+## expect[5] = 0x12

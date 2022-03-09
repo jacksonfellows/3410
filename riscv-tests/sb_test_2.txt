@@ -1,0 +1,16 @@
+## desc = Test storing bytes into a word then loading that word back
+## cycles = 9
+addi t0, x0, 0x12
+sb t0, 3(x0)
+
+addi t0, x0, 0x34
+sb t0, 2(x0)
+
+addi t0, x0, 0x56
+sb t0, 1(x0)
+
+addi t0, x0, 0x78
+sb t0, 0(x0)
+
+lw t0, 0(x0)
+## expect[5] = 0x12345678
