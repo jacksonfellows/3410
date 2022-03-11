@@ -13,13 +13,15 @@ def reg_num(r):
         return 0
     if r == 'sp':
         return 2
+    if r == 'ra':
+        return 1
     raise ValueError('Cannot parse register ' + r)
 
 def parse_inst(inst):
     op, *rest = inst.split()
     if len(rest) == 0:
         return (op,)
-    base = 16 if op == 'j' or op.startswith('b') else 10
+    base = 16 if branches(op) or op == 'jal' else 10
     args = [a.split()[0] for a in ' '.join(rest).split(',')]
     r = [op]
     for arg in args:
@@ -57,6 +59,8 @@ def print_expr(expr):
         return f'{print_expr(expr[1][1])}[{print_expr(expr[1][2])}]'
     if expr[0] == 'arg':
         return f'arg{expr[1]}'
+    if expr[0] == 'return_val':
+        return 'return_val'
     raise ValueError(f'Cannot print expr {expr}')
 
 class Program:
@@ -85,7 +89,9 @@ class Program:
             elif inst[0].startswith('b'):
                 self.cfg[address] = (inst[2 if inst[0] == 'bnez' else 3], address+4)
             elif inst[0] == 'jal':
-                raise ValueError('jal not supported')
+                assert inst[1] == reg_num('ra')
+                # assume function call works as expected
+                self.cfg[address] = (address+4,)
             else:
                 if i != len(self.code) - 1:
                     self.cfg[address] = (address+4,)
@@ -128,20 +134,35 @@ class Program:
         assert(self.code[0][1] == reg_num('sp'))
         assert(self.code[0][2] == reg_num('sp'))
         stack_size = -self.code[0][3]
-        # save s0
-        assert(self.code[1][0] == 'sw')
-        assert(self.code[1][1] == reg_num('s0'))
-        assert(self.code[1][2] == reg_num('sp'))
+        prelude_len = 3
+        try:
+            # save s0
+            assert(self.code[1][0] == 'sw')
+            assert(self.code[1][1] == reg_num('s0'))
+            assert(self.code[1][2] == reg_num('sp'))
+        except:
+            prelude_len = 4
+            # save ra
+            assert(self.code[1][0] == 'sw')
+            assert(self.code[1][1] == reg_num('ra'))
+            assert(self.code[1][2] == reg_num('sp'))
+            # save s0
+            assert(self.code[2][0] == 'sw')
+            assert(self.code[2][1] == reg_num('s0'))
+            assert(self.code[2][2] == reg_num('sp'))
         # change s0
-        assert(self.code[2] == ('addi', reg_num('s0'), reg_num('sp'), stack_size))
+        assert(self.code[prelude_len-1] == ('addi', reg_num('s0'), reg_num('sp'), stack_size))
+        if prelude_len == 4:
+            # reset ra
+            assert(self.code[-4] == ('lw', reg_num('ra'), reg_num('sp'), stack_size-4))
         # reset s0
-        assert(self.code[-3] == ('lw', reg_num('s0'), reg_num('sp'), stack_size-4))
+        assert(self.code[-3] == ('lw', reg_num('s0'), reg_num('sp'), stack_size-(4 if prelude_len == 3 else 8)))
         # reset sp
         assert(self.code[-2] == ('addi', reg_num('sp'), reg_num('sp'), stack_size))
         # end with a ret
         assert(self.code[-1] == ('ret',))
 
-        blocks = self.find_basic_blocks(3, -3)
+        blocks = self.find_basic_blocks(prelude_len, -prelude_len)
         # print(f'blocks: {blocks}')
 
         stack_offset_to_i = lambda offset: (stack_size - 8 + offset)//4
@@ -170,14 +191,20 @@ class Program:
                     reg_to_stack[inst[1]] = [inst[0], reg_to_stack[inst[2]], reg_to_stack[inst[3]]]
                 elif inst[0] == 'mv':
                     reg_to_stack[inst[1]] = reg_to_stack[inst[2]]
+                elif inst[0] == 'li':
+                    reg_to_stack[inst[1]] = ['const', inst[2]]
+                elif inst[0] == 'lui':
+                    reg_to_stack[inst[1]] = ['const', inst[2] << 12]
                 elif branches(inst[0]):
                     assert(address == block[-1])
                     if inst[0] == 'j':
                         print(f'jump to block {address_to_block(inst[1])}')
                     elif inst[0].startswith('b'):
                         print(f'if ({inst[0][1:]} {print_expr(reg_to_stack[inst[1]])} {print_expr(reg_to_stack[inst[2]])}) then block {address_to_block(inst[3])} else block {i+1}')
-                    else:
-                        raise ValueError(f'Unsupported branch {inst[0]}')
+                elif inst[0] == 'jal':
+                    # assume two args: dumb
+                    print(f'calling function at {inst[2]} with {print_expr(reg_to_stack[10])}, {print_expr(reg_to_stack[11])}')
+                    reg_to_stack[10] = ['return_val']
                 else:
                     raise ValueError(f'Unsupported op {inst[0]}')
                 # print(reg_to_stack)
