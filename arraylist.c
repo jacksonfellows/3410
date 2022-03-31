@@ -32,6 +32,8 @@ void grow(arraylist* a) {
  * capacity of the arraylist.
  */
 void arraylist_add(arraylist* a, int x) {
+    grow(a);
+    a->array[a->length++] = x;
 }
 
 /*
@@ -40,6 +42,12 @@ void arraylist_add(arraylist* a, int x) {
  * insert an element with an index beyond the end of an arraylist.
  */
 void arraylist_insert(arraylist* a, unsigned int index, int x) {
+    grow(a);
+    for (int i = a->length; i > index; i--) {
+        a->array[i] = a->array[i-1];
+    }
+    a->array[index] = x;
+    a->length++;
 }
 
 /*
@@ -47,6 +55,8 @@ void arraylist_insert(arraylist* a, unsigned int index, int x) {
  */
 void arraylist_free(arraylist* a) {
     // Hint: How many times is malloc called when creating a new arraylist?
+    free(a->array);
+    free(a);
 }
 
 ////////////////////////////////////////////////////////////////////////////////
